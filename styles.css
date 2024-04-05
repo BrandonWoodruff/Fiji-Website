@@ -12,7 +12,7 @@ body {
 
 
 
-header, .main, .photo,.food, .contact, aside, footer {
+header, .main, .photo,.food, .contact {
   text-align: center;
 }
 .logo {
@@ -48,10 +48,6 @@ header {
 .hp {
 
   font-size: large;
-}
-nav {
-  grid-area: nav;
-  background: #ce1126;
 }
 
 .home {
