@@ -2,16 +2,14 @@ body {
     font-size: 2.5em;
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "head" "nav" "main" "aside" "foot";
+    grid-template-areas: "head" "main" ;
     
     background-image: url("rugby_bg.png");
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
   }
   
-  header, .main, .photo,.food, .contact, aside, footer {
+  header, .main, .photo,.food, .contact {
     text-align: center;
   }
   .logo {
@@ -47,14 +45,8 @@ body {
   .hp {
   
     font-size: large;
-  }
-  nav {
-    grid-area: nav;
-    background: #3498db;
-  }
   
   .home {
-    background-image: url("rugby_bg.png");
     display: block;
     text-align: center;
     padding: 1em;
@@ -72,20 +64,17 @@ body {
   }
   
   .food {
-    background-image: url("rugby_bg.png");
     display: none;
     padding: 1em;
   }
 
 
   .photo {
-    background-image: url("rugby_bg.png");
     display: none;
     padding: 1em;
   }
   
   .contact {
-    background-image: url("rugby_bg.png");
     display: none;
     padding: 1em;
   }
