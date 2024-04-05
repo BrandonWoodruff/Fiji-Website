@@ -4,7 +4,7 @@ body {
     grid-template-columns: auto;
     grid-template-areas: "head" "main" ;
     
-    background-image: url("rugby_bg.png");
+    background-image: url("images/rugby_bg.png");
     background-size: cover;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
   }
@@ -15,7 +15,7 @@ body {
   .logo {
     display: block;
     height: auto;
-    float: left;
+    justify-self:end;
     max-width: 10%; /* Adjust the value to your preferred max width */
     
   }
@@ -46,7 +46,7 @@ body {
   .hp {
   
     font-size: large;
-  
+  }
   .home {
     display: block;
     text-align: center;

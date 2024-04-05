@@ -2,12 +2,14 @@ body {
   font-size: 2.5em;
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "head" "nav" "main" "aside" "foot";
-  
-  background-image: url("flagbg.jpg");
+  grid-template-areas: "head" "nav" "main";
+  background-image: url("images/flagbg.jpg");
   background-size: cover;
 }
 
+header>* {
+  position: absolute;
+}
 
 
 header, .main, .photo,.food, .contact {
@@ -16,7 +18,7 @@ header, .main, .photo,.food, .contact {
 .logo {
   display: block;
   height: auto;
-  float: left;
+  justify-self:end;
   max-width: 10%; /* Adjust the value to your preferred max width */
 }
 header {
@@ -24,7 +26,39 @@ header {
   grid-area: head;
   color: white;
   text-align: center;
-  
+}
+
+nav {
+  grid-area: nav;
+  background: #002868;
+  /* Adjust background color as needed */
+  color: white;
+  text-align: center;
+  border-radius: 2vw;
+    /* Add rounded corners relative to viewport width */
+    
+}
+
+nav ul {
+  list-style-type: none;
+  justify-content: center;
+  /* Center align the navigation links */
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+  /* Adjust spacing between navigation items */
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #ce1126;
 }
 .video {
   border: 1vw solid #3498db; /* Add a border relative to viewport width */
@@ -79,41 +113,12 @@ header {
   padding: 1em;
 }
 
-aside {
-  background: #ce1126;
-  grid-area: aside;
-  color: white;
-  font-size: medium;
-  text-align: left;
-}
 main {
   grid-area: main;}
 
 footer {
   background: #002868;
   grid-area: foot;
-}
-
-/* Nav Bar Style */
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  font-size: .5em;
-  color: white;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  text-align: left;
-}
-
-li a:hover {
-  color: #ce1126;
-  background-color: #002868;
 }
 
 
@@ -123,7 +128,7 @@ li a:hover {
   body{
     grid-template-columns: 15vw auto 15vw;
     grid-template-rows: 10vh auto 10vh auto;
-    grid-template-areas: "head head head" "main main main" ;
+    grid-template-areas: "head head head" "nav main main" ;
   }
 }
 
@@ -132,7 +137,7 @@ li a:hover {
   body{
     grid-template-columns: 20vw auto;
     grid-template-rows: 10vh 1fr 1fr 10vh ;
-    grid-template-areas: "head head" "main main";
+    grid-template-areas: "head head" "nav main";
   }
 }
 
