@@ -79,13 +79,6 @@ body {
     padding: 1em;
   }
   
-  aside {
-    background: #68bfe5;
-    grid-area: aside;
-    color: white;
-    font-size: medium;
-    text-align: left;
-  }
   main {
     grid-area: main;}
   
@@ -99,7 +92,7 @@ body {
     list-style-type: none;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: .5em;
     color: white;
   }
@@ -123,7 +116,7 @@ body {
     body{
       grid-template-columns: 15vw auto 15vw;
       grid-template-rows: 10vh auto 10vh auto;
-      grid-template-areas: "head head head" "nav main aside" "foot foot foot";
+      grid-template-areas: "head head head" "main main main";
     }
   }
   
@@ -132,7 +125,7 @@ body {
     body{
       grid-template-columns: 20vw auto;
       grid-template-rows: 10vh 1fr 1fr 10vh ;
-      grid-template-areas: "head head" "nav main" "aside main" "foot foot";
+      grid-template-areas: "head head" "main main";
     }
   }
   
