@@ -6,8 +6,6 @@ body {
   
   background-image: url("flagbg.jpg");
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 
@@ -51,7 +49,6 @@ header {
 }
 
 .home {
-  background-image: url("flagbg.jpg");
   display: block;
   text-align: center;
   padding: 1em;
@@ -69,18 +66,15 @@ header {
 }
 
 .food {
-  background-image: url("flagbg.jpg");
   display: none;
   padding: 1em;
 }
 .photo {
-  background-image: url("flagbg.jpg");
   display: none;
   padding: 1em;
 }
 
 .contact {
-  background-image: url("flagbg.jpg");
   display: none;
   padding: 1em;
 }
@@ -105,7 +99,7 @@ nav ul {
   list-style-type: none;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: .5em;
   color: white;
 }
@@ -129,7 +123,7 @@ li a:hover {
   body{
     grid-template-columns: 15vw auto 15vw;
     grid-template-rows: 10vh auto 10vh auto;
-    grid-template-areas: "head head head" "nav main aside" "foot foot foot";
+    grid-template-areas: "head head head" "main main main" ;
   }
 }
 
@@ -138,7 +132,7 @@ li a:hover {
   body{
     grid-template-columns: 20vw auto;
     grid-template-rows: 10vh 1fr 1fr 10vh ;
-    grid-template-areas: "head head" "nav main" "aside main" "foot foot";
+    grid-template-areas: "head head" "main main";
   }
 }
 
