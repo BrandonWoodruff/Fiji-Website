@@ -17,6 +17,7 @@ body {
     height: auto;
     float: left;
     max-width: 10%; /* Adjust the value to your preferred max width */
+    
   }
   header {
     background: #002868;
@@ -107,26 +108,6 @@ body {
   li a:hover {
     color: #ce1126;
     background-color: #002868;
-  }
-  
-  
-  
-  /*Desktop View*/
-  @media all and (min-width: 800px) {
-    body{
-      grid-template-columns: 15vw auto 15vw;
-      grid-template-rows: 10vh auto 10vh auto;
-      grid-template-areas: "head head head" "main main main";
-    }
-  }
-  
-  /*Tablet View*/
-  @media all and (min-width: 600px) and (max-width: 799px) {
-    body{
-      grid-template-columns: 20vw auto;
-      grid-template-rows: 10vh 1fr 1fr 10vh ;
-      grid-template-areas: "head head" "main main";
-    }
   }
   
   p {
